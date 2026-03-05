@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voices From The Periphery</title>
+    <link rel="icon" type="image/x-icon" href="/Img/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/38985a857d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <marquee class="marq"
+    bgcolor="brown"
+    direction="left"
+    loop="" style="color: #fff;" >Call for the paper: 
+    <a href="" style="color: #fff;"> The Tales of the Marginals</a>
+</marquee>
+    <header>
+        <a href="index.html"><img class="logo" src="Img/Logo.png"></a>
+        <div>
+        <h1 style="margin: 0;">Voices From The Periphery</h1>
+        <h6 style="margin: 0;">Khātirāt-e Fārāmūsh Shode</h6>
+    </div>
+        <a href="index.html"><img class="logo-right" src="Img/tales.jpg"></a>
+    </header>
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i> 
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li class="close-menu" id="close-menu">
+            <i class="fas fa-times"></i> 
+        </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="know-us.html">Know Us</a></li>
+            <li><a href="#">Lectures <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="Anthropology.html">Anthropology</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="literature.html">Literature</a></li>
+                    <li><a href="political-science.html">Political Science</a></li>
+                    <li><a href="sociology.html">Sociology</a></li>
+                    <li><a href="subaltern.html">Subaltern Studies</a></li>
+                </ul></li>
+                <li><a href="posters.html">Posters</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="#">Books  <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                <li><a href="books.html">About</a></li>
+                <li><a href="">Files</a></li>
+            </ul></li>
+            <li class="dd"><a href="#">Tales of the Marginals <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="https://wa.me/+918910481374?text=I want to buy a journal">Buy Journal</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="teams.html">Team and Contact</a></li>
+                    <li><a href="guideline.html">Author's Guidelines</a></li>
+                    <li><a href="#">Archives</a></li>
+                </ul></li>
+            <li class="dd"><a href="#">Oral Archives <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about-oral-archives.html">About</a></li>
+                    <li><a href="#">Tribal Myths and History</a></li>
+                    <li><a href="#">Partition and Post Partition</a></li>
+                    <li><a href="#">Naxalbari Movement Archives</a></li>
+                    <li><a href="#">Era of '80s '90s</a></li>
+                </ul></li>
+            <li class="dd"><a href="#">Case Studies  <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                <li><a href="case-study.html">About</a></li>
+                <li><a href="files.html">Files</a></li>
+            </ul></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="announcement.html">Announcements</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>            
+
+        </ul>
+    </nav>
+    <main style="overflow: hidden;">
+        <section id="home">
+            <div class="slider-list">
+                <div class="list">
+                    <div class="item">
+                        <img src="Img/l-1.jpg" alt="image1" class="slide-img">
+                    </div>
+                    <div class="item">
+                        <img src="Img/l-2.jpg" alt="image2" class="slide-img">
+                    </div>
+                    <div class="item">
+                        <img src="Img/l-3.jpg" alt="image3" class="slide-img">
+                    </div>
+                    <div class="item">
+                        <img src="Img/l-4.jpg" alt="image4" class="slide-img">
+                    </div>
+                    <div class="item">
+                        <img src="Img/l-5.jpg" alt="image4" class="slide-img">
+                    </div>
+                </div>
+        
+                <!-- Arrows -->
+                <div class="arrow left" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="arrow right" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></div>
+        
+                <!-- Dots -->
+                <div class="dots">
+                    <div class="dot" onclick="moveToSlide(0)"></div>
+                    <div class="dot" onclick="moveToSlide(1)"></div>
+                    <div class="dot" onclick="moveToSlide(2)"></div>
+                    <div class="dot" onclick="moveToSlide(3)"></div>
+                    <div class="dot" onclick="moveToSlide(4)"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="case-container">    
+            <!-- Left Section -->
+            <div class="contact-info">
+                <h2>What is Voices from the Periphery?</h2>
+                <h4> Voices from the Periphery is a scholarly and archival platform devoted to the study and critical interpretation of subaltern histories, marginal communities, and alternative knowledge systems. Bringing together historical research, oral archives, interdisciplinary scholarship, and public intellectual engagement, the platform foregrounds voices historically excluded from dominant narratives, with a primary focus on South Asia while remaining attentive to comparative and transnational perspectives. Committed to methodological rigour and ethical research practices, Voices from the Periphery seeks to foster responsible archival work, critical dialogue, and sustained scholarly intervention in the study of marginality as both a historical condition and an analytical framework.  </h4>
+            </div>
+        </section>
+        <section class="about-platform">
+    <!-- Decorative Historical Elements (Desktop Only) -->
+    <div class="decorative-element element-1">
+        <div class="decorative-icon">
+            <i class="fas fa-feather-alt"></i>
+        </div>
+    </div>
+    <div class="decorative-element element-2">
+        <div class="decorative-icon">
+            <i class="fas fa-landmark"></i>
+        </div>
+    </div>
+    <div class="decorative-element element-3">
+        <div class="decorative-icon">
+            <i class="fas fa-archive"></i>
+        </div>
+    </div>
+    <div class="decorative-element element-4">
+        <div class="decorative-icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+    </div>
+    <div class="decorative-element element-5">
+        <div class="decorative-icon">
+            <i class="fas fa-book-open"></i>
+        </div>
+    </div>
+    <div class="decorative-element element-6">
+        <div class="decorative-icon">
+            <i class="fas fa-users"></i>
+        </div>
+    </div>
+    
+    <!-- Background Pattern -->
+    <div class="historical-pattern"></div>
+    
+    <!-- Mission Section -->
+    <div class="platform-section">
+        <h2 class="platform-heading">Our Mission</h2>
+        <div class="platform-content">
+            <p>The mission of Voices from the Periphery is to advance interdisciplinary research and public scholarship on marginality through publications, oral archives, lectures, and collaborative fieldwork. With a primary focus on South Asia and an openness to comparative and transnational perspectives, the platform brings together scholars, researchers, and practitioners to produce and disseminate historically grounded, methodologically sound, and socially engaged scholarship.</p>
+        </div>
+    </div>
+    
+    <!-- Vision Section -->
+    <div class="platform-section">
+        <h2 class="platform-heading">Our Vision</h2>
+        <div class="platform-content">
+            <p>Voices from the Periphery envisions an intellectually rigorous and ethically grounded scholarly space that foregrounds subaltern histories and marginal voices while critically interrogating dominant historical narratives. The platform seeks to contribute to global debates on power, representation, and historical agency by treating the periphery not merely as a site of exclusion, but as a productive analytical framework for rethinking history, society, and knowledge.</p>
+        </div>
+    </div>
+    
+    <!-- Research Ethics Section -->
+    <div class="platform-section">
+        <h2 class="platform-heading">Research Ethics</h2>
+        <div class="platform-content">
+            <p>Voices from the Periphery is committed to ethical research practices that prioritise informed consent, responsible archival methods, and respectful representation of communities whose histories have been structurally marginalised. The platform upholds principles of academic integrity, reflexivity, and accountability, recognising the ethical responsibilities involved in documenting, interpreting, and circulating narratives from the margins.</p>
+        </div>
+    </div>
+</section>
+        <section id="about">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <h2>The poet and the historian differ not by writing in verse or in prose. The true difference is that one relates what has happened, the other what may happen.
+                        </h2>
+                        <h5>
+                            — Poetics, Aristotle</h5>
+                    </div>
+                    <div class="slide">
+                        <h2>"Power is not a means; it is an end. One does not establish a dictatorship in order to safeguard a revolution; one makes the revolution in order to establish the dictatorship."
+                        </h2>
+                        <h5>
+                            — George Orwell, 1984</h5>
+                    </div>
+                    <div class="slide">
+                        <h2>Society does not consist of individuals, but expresses the sum of interrelations, the relations within which these individuals stand.
+                        </h2>
+                        <h5>
+                            — Karl Marx, Grundrisse: Foundations of the Critique of Political Economy</h5>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services">
+            <div class="floating-text">
+                    <h1>Be the listener of those silent voices.<br>
+                        Be the speaker of those silent words.</h1>
+                    <h5>--- Voices from the Periphery</h5>
+                </div>
+        </section>
+        
+
+        <section id="testimonial">
+            <div class="testimonial-slider-container" id="testimonialSlider">
+                <div class="testimonial-slider" id="testimonialSliderTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active" id="testimonial1">
+                        <img src="Img/harbans.jpg" class="testimonial-image" id="testimonialImg1">
+                        <h4 class="testimonial-text" id="testimonialText1">
+                            "It is truly inspiring for people like me, an old man, to witness such initiatives. Engaging with students always brings fresh perspectives and new ideas, which is both enriching and refreshing. As your name suggests, Voices from the Periphery holds the promise of uncovering and documenting the histories of marginalized communities, shedding light on stories that often remain unheard. This endeavor rekindles our hope in the youth of our country, reminding us that the next generation is committed to exploring and amplifying the voices that history has long neglected.
+                            "
+                        </h4>
+                        <h4 class="testimonial-author" id="testimonialAuthor1">Professor Harbans Mukhia</h4>
+                    </div>
+            
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide" id="testimonial2">
+                        <img src="Img/ayesha.jpg" class="testimonial-image" id="testimonialImg2">
+                        <p class="testimonial-text" id="testimonialText2">
+                            "Aayush and his team Voices from the Periphery serves as a vital bridge between the margins and the mainstream. We must recognize how most writings predominantly center on the mainstream, often neglecting the voices of the marginalized. Here, I hope we can discover a path toward truly understanding those who have long remained unheard."
+                        </p>
+                        <h4 class="testimonial-author" id="testimonialAuthor2">Professor Ayesha Jalal</h4>
+                    </div>
+
+                    <div class="testimonial-slide" id="testimonial2">
+                        <img src="Img/Richard.jpg" alt="Another Person" class="testimonial-image" id="testimonialImg2">
+                        <p class="testimonial-text" id="testimonialText2">
+                            "I deeply admire the initiative you have taken in establishing Voices from the Periphery. It is a commendable effort that creates a platform for uncovering, documenting, and analyzing the histories of marginalized communities—histories that have often been overlooked or silenced by mainstream narratives. I sincerely wish you all the best in this important journey, and I hope it continues to inspire meaningful discourse and critical engagement.
+                            "
+                        </p>
+                        <h4 class="testimonial-author" id="testimonialAuthor2">Professor Richard M. Eaton</h4>
+                    </div>
+
+                    <div class="testimonial-slide" id="testimonial2">
+                        <img src="Img/ranabir.jpg" alt="Another Person" class="testimonial-image" id="testimonialImg2">
+                        <p class="testimonial-text" id="testimonialText2">
+                            "I sincerely thank the Voices from the Periphery team for organizing these lectures and bringing marginalized voices to the forefront. I hope they will foster a space where everyone can share their own history.                            "
+                        </p>
+                        <h4 class="testimonial-author" id="testimonialAuthor2">Professor Ranabir Chakravarti</h4>
+                    </div>
+
+                    <div class="testimonial-slide" id="testimonial2">
+                        <img src="Img/homi.jpg" alt="Another Person" class="testimonial-image" id="testimonialImg2">
+                        <p class="testimonial-text" id="testimonialText2">
+                            "I am deeply moved by your commitment to amplifying marginalized voices and interrogating dominant historical narratives. Such interventions are not only intellectually vital but also ethically imperative in our fractured world. I look forward to witnessing the powerful work that emerges from your collective. I am deeply moved by your commitment to amplifying marginalized voices and interrogating dominant historical narratives. Such interventions are not only intellectually vital but also ethically imperative in our fractured world. I look forward to witnessing the powerful work that emerges from your collective."
+                        </p>
+                        <h4 class="testimonial-author" id="testimonialAuthor2">Homi K. Bhabha</h4>
+                    </div>
+
+                    <div class="testimonial-slide" id="testimonial2">
+                        <img src="Img/amiya.jpg" alt="Another Person" class="testimonial-image" id="testimonialImg2">
+                        <p class="testimonial-text" id="testimonialText2">
+                            "Voices from the Periphery is a remarkable initiative that challenges mainstream narratives by bringing forth the histories and experiences of marginalized communities. By creating a space for critical engagement and meaningful discussions, this group is not only documenting the unheard voices of the past but also shaping the intellectual discourse of the future. It is truly inspiring to see young scholars take on such an important task, fostering a deeper and more inclusive understanding of history. Wishing the team great success in their journey of exploration and advocacy!
+                            "
+                        </p>
+                        <h4 class="testimonial-author" id="testimonialAuthor2">Professor Amiya P Sen</h4>
+                    </div>
+                </div>
+            
+                <!-- Navigation Arrows -->
+                <button class="testimonial-prev" id="testimonialPrevBtn">&#10094;</button>
+                <button class="testimonial-next" id="testimonialNextBtn">&#10095;</button>
+            
+                <!-- Dots -->
+                <div class="testimonial-dots" id="testimonialDots">
+                    <span class="testimonial-dot active" id="testimonialDot1"></span>
+                    <span class="testimonial-dot" id="testimonialDot2"></span>
+                    <span class="testimonial-dot" id="testimonialDot3"></span>
+                    <span class="testimonial-dot" id="testimonialDot4"></span>
+                    <span class="testimonial-dot" id="testimonialDot5"></span>
+                    <span class="testimonial-dot" id="testimonialDot6"></span>
+
+                </div>
+            </div>        
+        </section>
+        <section class="contact-container">
+            <!-- Left Section -->
+            <div class="contact-info">
+                <h2>Talk to Us</h2>
+                <p>voicesfromtheperiphery@gmail.com</p>
+                <div class="contact-social">
+                    <a href="https://www.facebook.com/share/1A2Nna5KKN/"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/voices-from-the-periphery/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://youtube.com/@periphery_0207?si=nBv_GfhDf2gRAfAn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- Right Section (Form) -->
+            <div class="contact-form">
+                <form action="https://script.google.com/macros/s/AKfycbyCiBLXoA9UwTytoLh7vH2N9gtPS3V0M8k0s1PicD-EzLWWqarKOs0Yano5S2AKAqBS/exec" method="POST">
+                    <div style="display: flex; gap: 20px;">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div style="display: flex; gap: 20px;">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <input type="text" name="address" placeholder="Address">
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Type your message here..." required></textarea>
+                    <button id="my-form-button" type="submit">Submit</button>
+                </form>
+                <script>
+                if (!email || !email.includes('@')) {
+                    return ContentService.createTextOutput(
+                      JSON.stringify({error: "Invalid email"})
+                    ).setMimeType(ContentService.MimeType.JSON);
+                  }
+                </script>
+               
+            </div>
+        </section>
+<a href="https://chat.whatsapp.com/LIhIUfNnSeJ3Jlo5Pd42dN?text=Hello! I would like to know more about your initiative."
+   class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<a href="https://www.facebook.com/share/1A2Nna5KKN/"
+   class="facebook-float" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+</a>
+<a href="https://www.linkedin.com/company/voices-from-the-periphery/"
+   class="linkedin-float" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+</a>
+<a href="https://youtube.com/@periphery_0207?si=nBv_GfhDf2gRAfAn"
+   class="youtube-float" target="_blank">
+    <i class="fa-brands fa-youtube"></i>
+</a>
+<a href="https://www.facebook.com/share/1A2Nna5KKN/"
+   class="facebook-float" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+</a>
+<a href="https://www.linkedin.com/company/voices-from-the-periphery/"
+   class="linkedin-float" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+</a>
+<a href="https://youtube.com/@periphery_0207?si=nBv_GfhDf2gRAfAn"
+   class="youtube-float" target="_blank">
+    <i class="fa-brands fa-youtube"></i>
+</a>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 by Voice From The Periphery: Developed by<br>
+        <a href="https://gobt.in/">GOBT</a></p>
+    </footer>
+<script src="app.js"></script>
+
+</body>
+</html>
