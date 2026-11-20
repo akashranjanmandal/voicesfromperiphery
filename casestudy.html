@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voices From The Periphery</title>
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+SC:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="archive.css">
+    <script>document.documentElement.classList.add('ax-js')</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/38985a857d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <marquee class="marq" bgcolor="brown" direction="left" loop="" style="color: #fff;">Call for the paper:
+        <a href="" style="color: #fff;"> The Tales of the Marginals</a>
+    </marquee>
+    <header>
+        <a href="index.html"><img class="logo" src="Img/Logo.png"></a>
+        <div>
+            <h1 style="margin: 0;">Voices From The Periphery</h1>
+            <h6 style="margin: 0;">Khātirāt-e Fārāmūsh Shode</h6>
+        </div>
+        <a href="heritagewalk.html"><img class="logo-right" src="img/passport-logo.png" alt="PastPort"></a>
+    </header>
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="know-us.html">Know Us</a></li>
+            <li><a href="#">Lectures <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="anthropology.html">Anthropology</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="literature.html">Literature</a></li>
+                    <li><a href="political-science.html">Political Science</a></li>
+                    <li><a href="sociology.html">Sociology</a></li>
+                    <li><a href="subaltern.html">Subaltern Studies</a></li>
+                </ul>
+            </li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="heritagewalk.html">PastPort Walks</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="casestudy.html">Case Study</a></li>
+            <li class="dd"><a href="#">Tales of the Marginals <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teams.html">Editorial Board</a></li>
+                    <li><a href="guideline.html">Author's Guidelines</a></li>
+                    <li><a href="#">Archives</a></li>
+                    <li><a href="https://wa.me/+919477765740?text=I want to buy a journal">Buy Journal</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Books <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="books.html">About</a></li>
+                    <li><a href="">Files</a></li>
+                </ul>
+            </li>
+            <li class="dd"><a href="#">Oral Archives <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about-oral-archives.html">About</a></li>
+                    <li><a href="#">Tribal Myths and History</a></li>
+                    <li><a href="#">Partition and Post Partition</a></li>
+                    <li><a href="#">Naxalbari Movement Archives</a></li>
+                    <li><a href="#">Era of '80s '90s</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <style>
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            /* Consistent styling for each card */
+            .pdf-container {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                height: 100%;
+                /* ensure height is flexible */
+            }
+
+            /* Image settings */
+            .pdf-container img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 6px;
+            }
+
+            /* Title styling */
+            .pdf-container h3 {
+                color: brown;
+                font-size: 18px;
+                text-align: center !important;
+                min-height: 72px;
+                /* Fix height for titles */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 8px;
+            }
+
+            /* Button styling */
+            .pdf-container a span {
+                background-color: brown;
+                color: #fff;
+                padding: 12px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: auto;
+                /* Push button to bottom */
+            }
+
+            .case-intro {
+                max-width: 900px;
+                margin: 0 auto 40px;
+                text-align: center;
+            }
+
+            .case-intro h4 {
+                margin: 0 0 16px;
+                line-height: 1.7;
+                text-align: center !important;
+            }
+
+            .case-intro .case-tagline {
+                font-style: italic;
+                font-size: 24px;
+                color: #f3d9a4;
+                margin: 24px 0 0;
+                text-align: center !important;
+            }
+
+            @media (max-width: 768px) {
+                .case-intro h4 {
+                    text-align: left !important;
+                }
+
+                .case-intro .case-tagline {
+                    font-size: 19px;
+                }
+            }
+        </style>
+        <section class="case-container">
+            <!-- Left Section -->
+            <div class="contact-info"
+                style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <h2>Case Studies</h2>
+                <div class="case-intro">
+                    <h4>At Voices from the Periphery, we conduct case studies to understand the present as it is lived.
+                        We go to the field, engage with people and communities, gather information, and document
+                        contemporary social and political realities through direct observation and academic inquiry.
+                    </h4>
+                    <h4>Our case studies bring together field research, public voices, evidence, and critical analysis
+                        to examine questions that matter in the present.</h4>
+                    <p class="case-tagline">We go beyond observation&mdash;to the ground, to the people, to the story.
+                    </p>
+                </div>
+                <div class="flex">
+                    <div class="pdf-container">
+                        <img src="img/file-2.jpg">
+                        <h3 style="color: brown; text-align: center !important;">Case Study on Nuliya Community, Mousuni
+                            Island, West Bengal</h3>
+                        <a href="stranded in the tides.pdf"><span
+                                style="background-color: brown; color: #fff; padding: 12px; border-radius: 5px;">Download
+                                Here</span></a>
+                    </div>
+                    <div class="pdf-container">
+                        <img src="img/file-1.jpg">
+                        <h3 style="color: brown; text-align: center !important;">Case Study on Marginal people of
+                            Baghmundi and Charida Village, Purulia, West Bengal</h3>
+                        <a href="cultural life and livelihood (1).pdf"><span
+                                style="background-color: brown; color: #fff; padding: 12px; border-radius: 5px;">Download
+                                Here</span></a>
+                    </div>
+                    <div class="pdf-container">
+                        <img src="img/case-3.jpg">
+                        <h3 style="color: brown; text-align: center !important;">Case Study on Marginal People of
+                            Jagdalpur, Bastar, Chattishgarh</h3>
+                        <a href="voices from the periphery presents.pdf"><span
+                                style="background-color: brown; color: #fff; padding: 12px; border-radius: 5px;">Download
+                                Here</span></a>
+                    </div>
+                    <div class="pdf-container">
+                        <img src="img/case-4.jpg">
+                        <h3 style="color: brown; text-align: center !important;">Case Study on Sonajhuri Hat, Bolpur,
+                            West Bengal</h3>
+                        <a href="sonajhuri haat case studies .pdf"><span
+                                style="background-color: brown; color: #fff; padding: 12px; border-radius: 5px;">Download
+                                Here</span></a>
+                    </div>
+                    <div class="pdf-container">
+                        <img src="img/case-5.jpg">
+                        <h3 style="color: brown; text-align: center !important;">Case Study on Sex-Workers of Prantik,
+                            West Bengal</h3>
+                        <a href="we live after nightfall.pdf"><span
+                                style="background-color: brown; color: #fff; padding: 12px; border-radius: 5px;">Download
+                                Here</span></a>
+                    </div>
+                    <div class="pdf-container">
+                        <img src="img/case-6.jpg">
+                        <h3>Case Study on Sellers of Mahismardini Festival, Chinsurah, Hooghly, West Bengal</h3>
+                        <a href="sacred commerce and everyday struggles.pdf"><span
+                                style="background-color: brown; color: #fff; padding: 12px; border-radius: 5px;">Download
+                                Here</span></a>
+                    </div>
+                    <div class="pdf-container">
+                        <img src="img/l-6.jpeg">
+                        <h3>Case Study on Village Workers of Smith Village, Meghalaya</h3>
+                        <a href="echoes of absence.pdf"><span
+                                style="background-color: brown; color: #fff; padding: 12px; border-radius: 5px;">Download
+                                Here</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="https://chat.whatsapp.com/LIhIUfNnSeJ3Jlo5Pd42dN?text=Hello! I would like to know more about your initiative."
+            class="whatsapp-float" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/share/1A2Nna5KKN/" class="facebook-float" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/voices.from.the.periphery?igsh=MW95eTZpaXY0Z3RhdQ==&amp;igsi=MW95eTZpaXY0Z3RhdQ=="
+            class="instagram-float" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@periphery_0207?si=nBv_GfhDf2gRAfAn" class="youtube-float" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    </main>
+    <footer>
+        <p>&copy; 2025 by Voice From The Periphery: Developed by<br>
+            <a href="https://gobt.in/">GOBT</a>
+        </p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="archive.js"></script>
+</body>
+
+</html>

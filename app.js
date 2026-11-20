@@ -1,27 +1,28 @@
 
-
 // Selecting elements
 const menuToggle = document.getElementById("menu-toggle");
 const closeMenu = document.getElementById("close-menu");
 const navList = document.getElementById("nav-list");
 
 // Open menu when burger icon is clicked
-menuToggle.addEventListener("click", () => {
-    navList.classList.add("active");
-});
+if (menuToggle && navList) {
+    menuToggle.addEventListener("click", () => {
+        navList.classList.add("active");
+    });
+}
 
 // Close menu when "X" icon is clicked
-closeMenu.addEventListener("click", () => {
-    navList.classList.remove("active");
-});
+if (closeMenu && navList) {
+    closeMenu.addEventListener("click", () => {
+        navList.classList.remove("active");
+    });
+}
 
 
-
-
-
+// Hero image slider (legacy markup: #home .item / #home .dot)
 let currentIndex = 0;
-const slides = document.querySelectorAll(".item");
-const dots = document.querySelectorAll(".dot");
+const slides = document.querySelectorAll("#home .item");
+const dots = document.querySelectorAll("#home .dot");
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -50,24 +51,25 @@ function autoSlide() {
     showSlide(currentIndex);
 }
 
-setInterval(autoSlide, 6000); // Change image every 3 seconds
-
-showSlide(currentIndex);
-
-
-
+if (slides.length) {
+    setInterval(autoSlide, 6000);
+    showSlide(currentIndex);
+}
 
 
-
+// Quote slider (legacy markup: .slider .slide)
 document.addEventListener("DOMContentLoaded", function () {
     let aboutIndex = 0;
     const aboutSlides = document.querySelectorAll(".slider .slide");
-    const dots = document.querySelectorAll(".dot");
+    const dots = document.querySelectorAll(".slider-container .dot");
+    const prev = document.querySelector(".slider-container .prev");
+    const next = document.querySelector(".slider-container .next");
+    if (!aboutSlides.length || !prev || !next) return;
 
     function showSlide(index) {
         aboutSlides.forEach((slide, i) => {
             slide.classList.toggle("active", i === index);
-            dots[i].classList.toggle("active", i === index);
+            if (dots[i]) dots[i].classList.toggle("active", i === index);
         });
     }
 
@@ -78,8 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide(aboutIndex);
     }
 
-    document.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
-    document.querySelector(".next").addEventListener("click", () => moveSlide(1));
+    prev.addEventListener("click", () => moveSlide(-1));
+    next.addEventListener("click", () => moveSlide(1));
     dots.forEach((dot, i) => {
         dot.addEventListener("click", () => {
             aboutIndex = i;
@@ -91,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
+// Testimonial slider (legacy markup: #testimonialSlider)
 let currentTestimonialIndex = 0;
 const testimonialSlides = document.querySelectorAll("#testimonialSlider .testimonial-slide");
 const testimonialDots = document.querySelectorAll("#testimonialDots .testimonial-dot");
@@ -101,7 +103,7 @@ const testimonialNextBtn = document.getElementById("testimonialNextBtn");
 function showTestimonialSlide(index) {
     testimonialSlides.forEach((slide, i) => {
         slide.classList.toggle("active", i === index);
-        testimonialDots[i].classList.toggle("active", i === index);
+        if (testimonialDots[i]) testimonialDots[i].classList.toggle("active", i === index);
     });
 }
 
@@ -117,18 +119,17 @@ function setCurrentTestimonialSlide(index) {
     showTestimonialSlide(index);
 }
 
-// Add Event Listeners
-testimonialPrevBtn.addEventListener("click", () => moveTestimonialSlide(-1));
-testimonialNextBtn.addEventListener("click", () => moveTestimonialSlide(1));
-testimonialDots.forEach((dot, index) => {
-    dot.addEventListener("click", () => setCurrentTestimonialSlide(index));
-});
-
-// Auto-slide every 5 seconds
-setInterval(() => moveTestimonialSlide(1), 5000);
-
+if (testimonialSlides.length && testimonialPrevBtn && testimonialNextBtn) {
+    testimonialPrevBtn.addEventListener("click", () => moveTestimonialSlide(-1));
+    testimonialNextBtn.addEventListener("click", () => moveTestimonialSlide(1));
+    testimonialDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => setCurrentTestimonialSlide(index));
+    });
+    setInterval(() => moveTestimonialSlide(1), 5000);
+}
 
 
+// Team member popup
 function openPopup(imageSrc, name, designation) {
     document.getElementById("popup-img").src = imageSrc;
     document.getElementById("popup-name").textContent = name;
@@ -141,41 +142,40 @@ function closePopup() {
 }
 
 
-    document.querySelectorAll(".faq-question").forEach(button => {
-        button.addEventListener("click", () => {
-            button.classList.toggle("active");
-            const answer = button.nextElementSibling;
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-            } else {
-                answer.style.display = "block";
-            }
-        });
-    });
-
-
-    function showAccordionBody() {
-        let accBody = document.getElementsByClassName("accordionBody");
-        if(accBody[0].style.display == "block"){ 
-          accBody[0].style.display = "none";
-        }else{
-          accBody[0].style.display = "block";
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const answer = button.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
         }
-      }
+    });
+});
 
-      function toggleAccordion(element) {
-        let parent = element.parentElement;
-        parent.classList.toggle("active");
+
+function showAccordionBody() {
+    let accBody = document.getElementsByClassName("accordionBody");
+    if (accBody[0].style.display == "block") {
+        accBody[0].style.display = "none";
+    } else {
+        accBody[0].style.display = "block";
     }
-    
+}
 
-    let autoSliderTrack = document.querySelector('.auto-slider-track');
+function toggleAccordion(element) {
+    let parent = element.parentElement;
+    parent.classList.toggle("active");
+}
+
+
+let autoSliderTrack = document.querySelector('.auto-slider-track');
 
 function pauseAutoSlider() {
-    autoSliderTrack.style.animationPlayState = 'paused';
+    if (autoSliderTrack) autoSliderTrack.style.animationPlayState = 'paused';
 }
 
 function startAutoSlider() {
-    autoSliderTrack.style.animationPlayState = 'running';
+    if (autoSliderTrack) autoSliderTrack.style.animationPlayState = 'running';
 }
-
